@@ -1,0 +1,59 @@
+d<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SimpleLogin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Simple Login</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="login-container animate__animated animate__zoomIn">
+      <h1>Login</h1>
+      <h2 id="error1"></h2>
+      <input
+        class="inputLogin"
+        type="email"
+        name="email-login"
+        id="emailLogin"
+        placeholder="Email"
+        required />
+      <input
+        class="inputLogin"
+        type="password"
+        name="password-login"
+        id="passLogin"
+        placeholder="Password"
+        required />
+      <button class="contBtn">Continue</button>
+      <p>Don't have an account?<span id="createAcc">Create account</span></p>
+    </div>
+    <div class="register-container animate__animated animate__zoomIn">
+      <h1>Sign Up</h1>
+
+      <input
+        type="email"
+        name="email-register"
+        id="email-register"
+        placeholder="Enter your Email" />
+      <input
+        type="password"
+        name="password-register"
+        id="password-register"
+        placeholder="Enter your Password" />
+      <button id="registerBtn">Register</button>
+      <p>Have an account?<span id="loginAcc">Login</span></p>
+    </div>
+
+    <div class="result-container animate__animated animate__jello">
+      <h3 id="result"></h3>
+      <button id="backBtn">Back</button>
+    </div>
+    <script type="module" src="SimpleLogin.js"></script>
+  </body>
+</html>
